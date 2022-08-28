@@ -36,7 +36,7 @@ your preferred browser.
 ```sh
 http://localhost:5000/
 ```
-![Image text](https://github.com/zzuljs/CppLearning/blob/master/CppLearning/raw/master/Itachi.jpg)
+![Image text](images/home.png)
 
 ## License
 
