@@ -1,7 +1,6 @@
 FROM python:3.9.12-alpine3.15
 
 ENV TZ=America/Bogota
-ARG UID=1000
 ENV FLASK_APP=app.py
 ENV FLASK_RUN_HOST=0.0.0.0
 WORKDIR /app
@@ -13,13 +12,13 @@ RUN apk add --no-cache --virtual .build-deps \
 
 COPY . .
 
-RUN addgroup admin && adduser -u $UID -S poswark -G admin \
-    && chown -R poswark:admin /app
+RUN addgroup admin && adduser -S flask -G admin \
+    && chown -R flask:admin /app
 RUN python -m pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 
-USER poswark
+USER flask
 EXPOSE 5000
 CMD ["flask", "run"]
 
