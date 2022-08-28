@@ -36,8 +36,15 @@ your preferred browser.
 ```sh
 http://localhost:5000/
 ```
+
+### home 
 ![Image text](images/home.png)
 
+### login
+user: admin
+password: 123
+
+![Image text](images/login.png)
 ## License
 
 MIT
