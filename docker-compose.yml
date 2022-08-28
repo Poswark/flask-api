@@ -1,0 +1,12 @@
+version: "3"
+services:
+  api:
+    build: .
+    container_name: flask-example
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_DEBUG=1
+      - FLASK_ENV=development
