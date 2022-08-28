@@ -27,19 +27,19 @@ def sign():
 
         return  redirect("/profile")
     else:
-        flash("Correo o contraseña incorrectos"), 400
+        print("Correo o contraseña incorrectos"), 400
         logging.error(session)
-        print(session)
         return redirect("/login")
  
 @app.route("/profile")
 def profile():
     return render_template("profile.html")
 
-
+'''
 @app.before_request
 def before_request():
     ruta = request.path
     if not 'usuario' in session and ruta != "/login" and ruta != "/"  and not ruta.startswith("/static"):
         flash("Inicia sesión para continuar")
         return redirect("/login")
+        '''
