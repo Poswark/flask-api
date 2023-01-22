@@ -1,11 +1,8 @@
 # flask-api
 Flask example 
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+ [![Docker pulls](https://img.shields.io/docker/pulls/poswark/flask-api?style=for-the-badge)](https://hub.docker.com/r/poswark/flask-api)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
-powered HTML5 Markdown editor.
 
 - ✨Magic ✨
 
